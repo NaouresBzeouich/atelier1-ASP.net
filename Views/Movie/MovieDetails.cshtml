@@ -1,0 +1,20 @@
+﻿@model Atelier1.Models.MovieViewModel
+<h2>Movie Details : </h2>
+<br />
+<h4>
+    movie name :     <a>
+        @Model.Movie.Name
+    </a>
+</h4>
+<br /><br />
+
+<h4>
+   customers : 
+</h4>
+@foreach(var Customer in Model.Customers)
+{
+    <ul>
+        @Customer.Name
+    </ul>
+
+}

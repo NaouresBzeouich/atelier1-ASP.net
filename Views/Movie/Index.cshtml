@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Atelier1.Models.Movie>
+<h2>Test Vue Index</h2>
+@foreach (var item in Model)
+{
+    <h3>@item.Name
+
+        <a href="@Url.Action("MovieDetails", "Movie", new { id = item.Id })">Voir les détails</a>
+
+
+    </h3>
+}
